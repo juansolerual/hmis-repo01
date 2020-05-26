@@ -146,6 +146,15 @@
            					<format>HTML</format>
             					<format>XML</format>
           				</formats>
+					<scanSet>
+        					<fileSet>
+          						<directory>${project.basedir}</directory>
+          						<includes>
+								<include>${project.basedir}/test/**/*.java</include>
+								<include>${project.basedir}/src/**/*.java</include>
+     							</includes>
+    						</fileSet>
+    					</scanSet>
 				</configuration>
               			<reportSets>
                     			<reportSet>
