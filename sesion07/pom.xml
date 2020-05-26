@@ -137,24 +137,17 @@
 				<version>3.0.0</version>
 			</plugin>
 			<plugin>
-                		<groupId>org.owasp</groupId>
-                		<artifactId>dependency‐check‐maven</artifactId>
-                		<version>5.3.2</version>
-        			<configuration>
-					<skipTestScope>false</skipTestScope>
-					<formats> 
-            					<format>HTML</format>
-            					<format>XML</format>
-          				</formats>
-    				</configuration>
-                		<reportSets>
-                    			<reportSet>
-                        			<reports>
-                            				<report>aggregate</report>
-                        			</reports>
-                    			</reportSet>
-               			 </reportSets>
-            		</plugin>
+              <groupId>org.owasp</groupId>
+              <artifactId>dependency-check-maven</artifactId>
+              <version>5.3.2</version>
+              <executions>
+                  <execution>
+                      <goals>
+                          <goal>check</goal>
+                      </goals>
+                  </execution>
+              </executions>
+            </plugin>
 		</plugins>
 	</reporting>
 
